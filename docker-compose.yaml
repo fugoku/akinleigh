@@ -1,0 +1,40 @@
+version: '3.9'
+services:
+  akinleigh:
+    container_name: akinleigh
+    image: ghcr.io/fugoku/akinleigh:latest
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.akinleigh.rule=Host(`akinleigh.fugoku.com`)
+      - traefik.http.routers.akinleigh.tls=true
+      - traefik.http.routers.akinleigh.entrypoints=web,websecure
+      - traefik.http.routers.akinleigh.tls.certresolver=letsencrypt
+      - traefik.http.middlewares.akinleigh.headers.SSLRedirect=true
+      - traefik.http.middlewares.akinleigh.headers.STSSeconds=315360000
+      - traefik.http.middlewares.akinleigh.headers.browserXSSFilter=true
+      - traefik.http.middlewares.akinleigh.headers.contentTypeNosniff=true
+      - traefik.http.middlewares.akinleigh.headers.forceSTSHeader=true
+      - traefik.http.middlewares.akinleigh.headers.SSLHost=akinleigh.fugoku.com
+      - traefik.http.middlewares.akinleigh.headers.STSIncludeSubdomains=true
+      - traefik.http.middlewares.akinleigh.headers.STSPreload=true
+      - traefik.http.routers.akinleigh.middlewares=akinleigh@docker
+    environment:
+      - TZ=UTC
+    user: root
+    volumes:
+      - /var/cache/akinleigh:/var/cache/akinleigh
+      - /etc/akinleigh:/etc/akinleigh
+      - /etc/akinleigh/server.yml:/etc/akinleigh/server.yml
+    restart: unless-stopped
+    command: [ "next", "start", "-p", "3000" ]
+    # ports:
+    #   - "3000:3000"
+    networks:
+      - coolify-infra
+      - deploy
+
+networks:
+  coolify-infra:
+    external: true
+  deploy:
+    external: true
