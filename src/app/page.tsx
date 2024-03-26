@@ -11,7 +11,6 @@ export default function Home() {
       {/* <Header />
       <WorldMap /> */}
 
-
       <div className="flex items-center my-10 justify-between" aria-label="Global">
 
         <div className="hidden lg:flex lg:gap-x-5 mx-auto max-w-2xl">
