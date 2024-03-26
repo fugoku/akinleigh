@@ -1,10 +1,16 @@
 // import Image from "next/image";
 // import "./globals.css";
 import Image from "next/image";
+import Header from "@/components/header"
+import WorldMap from "@/components/world-section";
 
 export default function Home() {
+  // className = "flex min-h-screen flex-col items-center justify-between p-24"
   return (
     <main>
+      {/* <Header />
+      <WorldMap /> */}
+
       <div className=" mt-20 sm:mt-0 flex-col sm:flex-row mx-2 flex items-center my-10 justify-between" aria-label="Global">
 
         <div className="lg:flex lg:gap-x-5 mx-auto max-w-2xl">
