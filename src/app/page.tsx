@@ -31,7 +31,6 @@ export default function Home() {
             <h2 className="text-1xl font-bold tracking-tight text-white sm:text-3xl">AI Powered Application</h2>
 
             <p className="sm:text-lg text-sm leading-8 text-white">sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-
           </div>
         </div>
         <div className=" lg:flex lg:gap-x-5 mx-auto max-w-2xl">
