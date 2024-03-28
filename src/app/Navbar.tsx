@@ -19,7 +19,7 @@ export default function Navbar() {
     return (
         <div className="bg-white">
             <header className="absolute inset-x-0 top-0 z-50">
-                <nav className="flex items-center justify-between py-6 lg:px-8" aria-label="Global">
+                <nav className="flex m-auto ml-20 items-center content-center self-center justify-around justify-items-around justify-content-around py-6 sm:gap-x-20 lg:px-8" aria-label="Global">
 
                     <div className="flex lg:hidden">
                         <button type="button" onClick={showNavBar} className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -29,27 +29,30 @@ export default function Navbar() {
                             </svg>
                         </button>
                     </div>
-                    <div className="hidden lg:flex lg:gap-x-5">
-                        <div className="flex lg:flex-1">
-                            <a href="#" className="-m-1.5 p-1.5">
-                                <span className="sr-only">Fugoku</span>
-                                <Image width={100} height={100} className="h-8 w-auto"
-                                    src="/assets/fugoku_logo.jpeg"
-                                    alt="fugoku logo" />
-                            </a>
-                        </div>
+
+                    <div className="hidden gap-x-4 sm:flex sm:flex-1">
+                        {/* <div className="flex lg:flex-1"> */}
+                        <a href="#" className="-m-1.5 p-1.5">
+                            <span className="sr-only">Fugoku</span>
+                            <Image width={100} height={100} className="h-8 w-auto"
+                                src="/assets/fugoku_logo.jpeg"
+                                alt="fugoku logo" />
+                        </a>
+                        {/* </div> */}
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Explore</a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Products</a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Solutions</a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
+                    </div>
+                    <div className="hidden gap-x-4 sm:flex sm:flex-1">
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Partners</a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Resources</a>
-                    </div>
-                    <div className="hidden gap-x-5 lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Search </a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Learn </a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Support </a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Contact Us</a>
+                    </div>
+                    <div className="hidden gap-x-4 sm:flex sm:flex-1">
+                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Search </a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Try for Free </a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Sign In </a>
                     </div>
