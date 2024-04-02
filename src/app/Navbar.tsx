@@ -19,7 +19,7 @@ export default function Navbar() {
     return (
         <div className="bg-white">
             <header className="absolute inset-x-0 top-0 z-50">
-                <nav className="flex m-auto ml-20 items-center content-center self-center justify-around justify-items-around justify-content-around py-6 sm:gap-x-20 lg:px-8" aria-label="Global">
+                <nav className="flex m-auto ml-20 items-center content-center self-center justify-around justify-items-around justify-content-around py-6 md:gap-x-20 lg:px-8" aria-label="Global">
 
                     <div className="flex lg:hidden">
                         <button type="button" onClick={showNavBar} className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -30,7 +30,7 @@ export default function Navbar() {
                         </button>
                     </div>
 
-                    <div className="hidden gap-x-4 sm:flex sm:flex-1">
+                    <div className="hidden gap-x-4 md:flex md:flex-1">
                         {/* <div className="flex lg:flex-1"> */}
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Fugoku</span>
@@ -44,14 +44,14 @@ export default function Navbar() {
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Solutions</a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
                     </div>
-                    <div className="hidden gap-x-4 sm:flex sm:flex-1">
+                    <div className="hidden gap-x-4 md:flex md:flex-1">
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Partners</a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Resources</a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Learn </a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Support </a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Contact Us</a>
                     </div>
-                    <div className="hidden gap-x-4 sm:flex sm:flex-1">
+                    <div className="hidden gap-x-4 md:flex md:flex-1">
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Search </a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Try for Free </a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Sign In </a>
@@ -61,7 +61,7 @@ export default function Navbar() {
                 <div className={`lg:hidden ${!isOpen ? 'hidden' : ''}`} role="dialog" aria-modal="true">
                     {/* <!-- Background backdrop, show/hide based on slide-over state. --> */}
                     <div className="fixed inset-0 z-50"></div>
-                    <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 md:max-w-sm md:ring-1 md:ring-gray-900/10">
                         <div className="flex items-center justify-between">
                             <a href="#" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Fugoku</span>
