@@ -1,5 +1,5 @@
 "use client";
-import { Dialog } from "@headlessui/react";
+// import { Dialog } from "@headlessui/react";
 import mapData from "@/data/map.json";
 import greenifydata from "@/data/greenify.json";
 import dynamic from 'next/dynamic';
