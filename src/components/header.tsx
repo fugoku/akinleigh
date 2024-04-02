@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import clsx from "clsx";
+// import clsx from "clsx";
 // import logo from "@/app/";
 import Image from "next/image";
-import { Dialog } from "@headlessui/react";
+// import { Dialog } from "@headlessui/react";
 
 const links = [
   { label: "Dashboard", href: "/dashboard" },
