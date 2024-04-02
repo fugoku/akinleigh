@@ -287,9 +287,8 @@ export default function Home() {
         </div>
       </div>
       {/* get more value */}
-      <h2 className="text-2xl font-bold tracking-tight text-center items-center py-10 pb-20 text-black sm:text-3xl">News and Blogs</h2>
+      {/* <h2 className="text-2xl font-bold tracking-tight text-center items-center py-10 pb-20 text-black sm:text-3xl">News and Blogs</h2>
       <div className="text-black bg-[#daf0ff] py-10 mx-10 rounded rounded-1xl gap-y-10 sm:gap-y-0 sm:gap-x-10 flex-col sm:flex-row flex content-center items-center  justify-items-center m-auto justify-center" aria-label="Global">
-        {/* <div className="flex-1 w-32 ..."> */}
         <div className="flex-1  mb-5 sm:mb-0 text-black sm:w-32 sm:max-w-sm overflow-hidden shadow-lg">
 
           <div className="px-6 py-4 
@@ -301,8 +300,6 @@ export default function Home() {
           </div>
 
         </div>
-        {/* </div> */}
-        {/* <div className="flex-1 w-32 ..."> */}
         <div className="flex-1 sm:w-32 sm:max-w-sm  mb-5 sm:mb-0 overflow-hidden shadow-lg">
 
           <div className="px-6 py-4 ">
@@ -313,8 +310,6 @@ export default function Home() {
           </div>
 
         </div>
-        {/* </div> */}
-        {/* <div className="flex-1 w-32 ..."> */}
         <div className="flex-1 sm:w-32 mb-5 sm:mb-0 sm:max-w-sm overflow-hidden shadow-lg">
           <div className="px-6 py-4 ">
             <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
@@ -324,8 +319,7 @@ export default function Home() {
           </div>
 
         </div>
-        {/* </div> */}
-      </div>
+      </div> */}
       {/* get more value ends */}
       {/* <h4 className="text-2xl font-bold my-10 tracking-tight text-center items-center py-10 pb-20 text-black sm:text-3xl">See how customers are innovating</h4> */}
       {/* <div className="flex-col sm:flex-row gap-y-10 sm:gap-y-0 flex items-center sm:gap-x-5 shadow-lg shadow-black rounded rounded-1xl justify-between my-48 mx-5 sm:mx-24 sm:px-10" aria-label="Global">
@@ -340,9 +334,8 @@ export default function Home() {
         </div>
       </div> */}
       {/* threes2 starts */}
-      <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Take the next step</h2>
-      <div className="text-black mb-10 flex-col sm:flex-row sm:gap-y-0 gap-y-10 sm:gap-x-10 flex content-center items-center  justify-items-center m-auto justify-center" aria-label="Global">
-        {/* <div className="flex-1 w-32 ..."> */}
+      {/* <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Take the next step</h2> */}
+      {/* <div className="text-black mb-10 flex-col sm:flex-row sm:gap-y-0 gap-y-10 sm:gap-x-10 flex content-center items-center  justify-items-center m-auto justify-center" aria-label="Global">
         <div className="flex-1 sm:w-32 sm:max-w-sm border border-black-500 rounded rounded-1xl overflow-hidden shadow-lg">
           <div className="flex content-center justify-center items-center">
             <Image width={200} height={200} className="" src="/assets/cloud2.png" alt="Sunset in the mountains" />
@@ -359,8 +352,6 @@ export default function Home() {
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
           </div>
         </div>
-        {/* </div> */}
-        {/* <div className="flex-1 w-32 ..."> */}
         <div className="flex-1 sm:w-32 sm:max-w-sm border border-black-500 rounded rounded-1xl overflow-hidden shadow-lg">
           <div className="flex content-center justify-center items-center">
             <Image width={200} height={200} className="" src="/assets/cloud1.jpeg" alt="Sunset in the mountains" />
@@ -377,8 +368,6 @@ export default function Home() {
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
           </div>
         </div>
-        {/* </div> */}
-        {/* <div className="flex-1 w-32 ..."> */}
         <div className="flex-1 sm:w-32 sm:max-w-sm border border-black-500 rounded rounded-1xl overflow-hidden shadow-lg">
           <div className="flex content-center justify-center items-center">
             <Image width={200} height={200} className="" src="/assets/cloud2.png" alt="Sunset in the mountains" />
@@ -389,15 +378,8 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
             </p>
           </div>
-          {/* <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-          </div> */}
         </div>
-        {/* </div> */}
-      </div>
-      {/* threes2 ends */}
+      </div> */}
 
 
     </main >
