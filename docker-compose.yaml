@@ -2,7 +2,7 @@ version: '3.9'
 services:
   akinleigh:
     container_name: akinleigh
-    image: ghcr.io/fugoku/akinleigh:develoment
+    image: ghcr.io/fugoku/akinleigh:development
     labels:
       - traefik.enable=true
       - traefik.http.routers.akinleigh.rule=Host(`akinleigh.fugoku.com`)
