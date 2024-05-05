@@ -1,7 +1,7 @@
-import WorldMap from "@/components/world-section";
-import Dust from "@/components/dust"
-import Bubble from "@/components/bubble"
-import { Suspense } from "react";
+// import WorldMap from "@/components/world-section";
+// import Dust from "@/components/dust"
+// import Bubble from "@/components/bubble"
+// import { Suspense } from "react";
 
 
 export default function Hero() {
