@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Navbar from "./Navbar";
+import { Montserrat } from "next/font/google";
+import Navbar from "../components/Navbar";
 import Footer from "./Footer";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Montserrat({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Fugoku",
@@ -18,15 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div>
-          <Navbar />
-        </div>
+      <body className={roboto.className}>
         {children}
-        <div>
-          <Footer />
-        </div>
       </body>
     </html>
   );
 }
+
