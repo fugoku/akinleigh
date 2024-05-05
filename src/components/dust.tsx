@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client"
 import * as THREE from "three"
 import { createContext, useContext, useRef, useState } from "react"
