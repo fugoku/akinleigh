@@ -47,7 +47,6 @@ export default function Consulting() {
           aria-hidden="true"
         ></div>
       </div>
-
       <section className="pb-14 ">
         <div className="mx-auto max-w-5xl bg-fade ">
           {/* <WorldMap/> */}
