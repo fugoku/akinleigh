@@ -5,11 +5,11 @@ import Footer from "./Footer";
 import "./globals.css";
 
 const roboto = Montserrat({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Fugoku",
@@ -25,8 +25,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         {children}
+        <Footer />
       </body>
     </html>
   );
 }
-
