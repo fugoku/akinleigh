@@ -3,23 +3,20 @@
 // import Bubble from "@/components/bubble"
 // import { Suspense } from "react";
 
-
-export default function Hero() {
+export default function Consulting() {
   return (
     <div className="bg-fill rounded-b-xl">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
-        >
-            
-        </div>
+        ></div>
 
         <div className="mx-auto max-w-4xl py-40 sm:py-48 lg:py-40">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              <span className="text-primary">Cloud Computing</span> Services &
-              Cloud <span className="text-primary">Consultancy</span>
+              <span className="text-primary">Build Easy</span> Deploy Fast
+              <span className="text-primary"></span>
             </h1>
             <p className="mt-6 text-md leading-8 text-white font-Montserrat">
               We offer a comprehensive suite of cloud services, including
@@ -52,16 +49,14 @@ export default function Hero() {
       </div>
 
       <section className="pb-14 ">
-          <div className="mx-auto max-w-5xl bg-fade ">
-            
-            {/* <WorldMap/> */}
-            {/* <Suspense fallback="null">
-                <Bubble></Bubble>
-            </Suspense> */}
-            {/* <Dust/> */}
-            
-            </div>
-        </section>
+        <div className="mx-auto max-w-5xl bg-fade ">
+          {/* <WorldMap/> */}
+          {/* <Suspense fallback="null">
+                  <Bubble></Bubble>
+              </Suspense> */}
+          {/* <Dust/> */}
+        </div>
+      </section>
     </div>
   );
 }
