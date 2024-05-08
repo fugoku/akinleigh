@@ -6,8 +6,8 @@ export default function Advantage() {
     <div className="bg-white">
       <div className="px-6 lg:px-8">
         <div className="mx-auto py-32">
-          <div className="text-center leading-8 pb-10 mx-auto max-w-4xl ">
-            <h2 className="text-4xl leading-[100px] font-bold tracking-wide text-gray-900 sm:text-6xl">
+          <div className="text-center leading-loose pb-10 mx-auto max-w-5xl ">
+            <h2 className="text-4xl leading-loose font-bold tracking-wide text-gray-900 sm:text-6xl">
               Fugoku&apos;s <span className="text-primary">Features</span> are
               everything you need for easy work
             </h2>

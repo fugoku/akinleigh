@@ -3,7 +3,6 @@
 // import Bubble from "@/components/bubble"
 // import { Suspense } from "react";
 
-
 export default function Hero() {
   return (
     <div className="bg-fill rounded-b-xl">
@@ -11,9 +10,7 @@ export default function Hero() {
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
-        >
-            
-        </div>
+        ></div>
 
         <div className="mx-auto max-w-4xl py-40 sm:py-48 lg:py-40">
           <div className="text-center">
@@ -52,16 +49,14 @@ export default function Hero() {
       </div>
 
       <section className="pb-14 ">
-          <div className="mx-auto max-w-5xl bg-fade ">
-            
-            {/* <WorldMap/> */}
-            {/* <Suspense fallback="null">
+        <div className="mx-auto max-w-5xl bg-fade ">
+          {/* <WorldMap/> */}
+          {/* <Suspense fallback="null">
                 <Bubble></Bubble>
             </Suspense> */}
-            {/* <Dust/> */}
-            
-            </div>
-        </section>
+          {/* <Dust/> */}
+        </div>
+      </section>
     </div>
   );
 }
