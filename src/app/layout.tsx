@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "./Footer";
 import "./globals.css";
+import Header from "@/components/header";
 
 const roboto = Montserrat({
   weight: ["400", "700"],
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
+        <Header />
         {children}
         <Footer />
       </body>
