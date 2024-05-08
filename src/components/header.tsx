@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Docs", href: "#" },
-  { label: "Applications", href: "#" },
-  { label: "Marketplace", href: "#" },
-  { label: "Blog", href: "#" },
-  { label: "Pricing", href: "#" },
+  { label: "Docs", href: "/docs" },
+  { label: "Consultancy", href: "/consultancy" },
+  { label: "Hosting", href: "/hosting" },
+  { label: "Services", href: "/services" },
+  { label: "Pricing", href: "/pricing" },
 ];
 
 const logo = "/logo111.svg";
@@ -23,13 +23,13 @@ export default function Header() {
 
   return (
     <>
-      <header className="absolute inset-x-0 top-0 z-50 ">
+      <header className="bg-fill absolute inset-x-0 top-0 z-50 ">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Fugoku</span>
               <Image src={logo} height={144} width={144} alt="fugoku logo" />
             </a>
@@ -69,8 +69,17 @@ export default function Header() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-fade">
+          <div className="p-0 hidden gap-x-5 lg:flex lg:flex-1 lg:justify-end">
+            <a
+              href="#"
+              className="p-2 text-sm font-semibold leading-6 text-fade"
+            >
+              Sign up
+            </a>
+            <a
+              href="#"
+              className="bg-primary text-white p-2 rounded-sm text-sm font-semibold leading-6 text-fade"
+            >
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -84,7 +93,7 @@ export default function Header() {
           <div className="fixed inset-0 z-50" />
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Fugoku</span>
                 <img className="h-8 w-auto" src={logo} alt="Fugoku logo" />
               </a>
