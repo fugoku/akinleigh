@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>
-            <Image src="/logo111.svg" alt="logo" width={200} height={200} />
+            <Image src="/logo-blue.svg" alt="logo" width={200} height={200} />
             <div className="text-gray-500 font-medium dark:text-white">
               Fugoku is a cloud-based web hosting platform that leverages AI to
               streamline the deployment process of web applications, websites,

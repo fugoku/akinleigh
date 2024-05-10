@@ -4,7 +4,7 @@ import { CheckIcon } from "@heroicons/react/24/outline";
 const pricing = {
   tiers: [
     {
-      title: "Freelancer",
+      title: "Starter",
       price: 24,
       frequency: "/month",
       description: "The essentials to provide your best work for clients.",
@@ -18,7 +18,7 @@ const pricing = {
       mostPopular: false,
     },
     {
-      title: "Startup",
+      title: "Company",
       price: 32,
       frequency: "/month",
       description: "A plan that scales with your rapidly growing business.",
@@ -33,7 +33,7 @@ const pricing = {
       mostPopular: true,
     },
     {
-      title: "Enterprise",
+      title: "Advanced",
       price: 48,
       frequency: "/month",
       description: "Dedicated support and infrastructure for your company.",
@@ -86,7 +86,7 @@ export default function Example() {
                   {tier.title}
                 </h3>
                 {tier.mostPopular ? (
-                  <p className="absolute top-0 py-1.5 px-4 bg-indigo-500 rounded-full text-xs font-semibold uppercase tracking-wide text-white transform -translate-y-1/2">
+                  <p className="absolute top-0 py-1.5 px-4 bg-primary rounded-full text-xs font-semibold uppercase tracking-wide text-white transform -translate-y-1/2">
                     Recommended
                   </p>
                 ) : null}
@@ -105,7 +105,7 @@ export default function Example() {
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex">
                       <CheckIcon
-                        className="flex-shrink-0 w-6 h-6 text-indigo-500"
+                        className="flex-shrink-0 w-6 h-6 text-primary"
                         aria-hidden="true"
                       />
                       <span className="ml-3 text-gray-500">{feature}</span>
@@ -118,8 +118,8 @@ export default function Example() {
                 href="#"
                 className={classNames(
                   tier.mostPopular
-                    ? "bg-indigo-500 text-white hover:bg-indigo-600"
-                    : "bg-indigo-50 text-indigo-700 hover:bg-indigo-100",
+                    ? "bg-fill text-white hover:bg-primary"
+                    : "bg-primary text-white hover:bg-fill",
                   "mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
                 )}
               >
