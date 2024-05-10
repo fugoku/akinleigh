@@ -125,7 +125,7 @@ export default function Example() {
                     className="flex-shrink-0 w-6 h-6 text-primary"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">+1 (555) 123-4567</span>
+                  <span className="ml-3">++2348169391259</span>
                 </dd>
                 <dt>
                   <span className="sr-only">Email</span>
@@ -135,7 +135,7 @@ export default function Example() {
                     className="flex-shrink-0 w-6 h-6 text-primary"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">support@workcation.com</span>
+                  <span className="ml-3">support@fugoku.com</span>
                 </dd>
               </dl>
               <ul role="list" className="mt-8 flex space-x-12">
@@ -202,7 +202,7 @@ export default function Example() {
             {/* Contact form */}
             <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
               <h3 className="text-lg font-medium font-semibold text-gray-900">
-                Let's get started
+                Let us get started
               </h3>
               <form
                 action="#"
