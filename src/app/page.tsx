@@ -9,7 +9,6 @@ import { Suspense } from "react";
 import Beroll from "@/components/beroll";
 import Consulting from "@/components/consulting";
 import Manage from "@/components/manage";
-import Services from "@/components/services";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       <Hero />
       {/* <Beroll/> */}
       <Advantage />
-      {/* <Services /> */}
       <Consulting />
       <Manage />
       {/* <Old /> */}

@@ -35,7 +35,7 @@ export default function Advantage() {
                       <h3>Cloud Consulting</h3>
                       <div className="flex items-center justify-start gap-x-6">
                         <a
-                          href="#"
+                          href="/consultancy"
                           className="rounded-md text-sm font-semibold text-primary shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                         >
                           Get started
@@ -64,7 +64,7 @@ export default function Advantage() {
                     <h3>Database Deployment</h3>
                     <div className="flex items-center justify-start gap-x-6">
                       <a
-                        href="#"
+                        href="/consultancy"
                         className="rounded-md text-sm font-semibold text-primary shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                       >
                         Get started
@@ -94,7 +94,7 @@ export default function Advantage() {
                     <h3>Cloud Hosting</h3>
                     <div className="flex items-center justify-start gap-x-6">
                       <a
-                        href="#"
+                        href="/consultancy"
                         className="rounded-md text-sm font-semibold text-primary shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                       >
                         Get started
@@ -122,7 +122,7 @@ export default function Advantage() {
                     <h3>Cloud Consulting</h3>
                     <div className="flex items-center justify-start gap-x-6">
                       <a
-                        href="#"
+                        href="/consultancy"
                         className="rounded-md text-sm font-semibold text-primary shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                       >
                         Get started
