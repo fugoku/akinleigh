@@ -71,13 +71,13 @@ export default function Header() {
           </div>
           <div className="p-0 hidden gap-x-5 lg:flex lg:flex-1 lg:justify-end">
             <a
-              href="#"
+              href="/signUp"
               className="p-2 text-sm font-semibold leading-6 text-fade"
             >
               Sign up
             </a>
             <a
-              href="#"
+              href="/signIn"
               className="bg-primary text-white p-2 rounded-sm text-sm font-semibold leading-6 text-fade"
             >
               Log in <span aria-hidden="true">&rarr;</span>
