@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "./Footer";
 import "./globals.css";
 import Header from "@/components/header";
+import Script from "next/script";
 
 const roboto = Montserrat({
   weight: ["400", "700"],
@@ -24,7 +25,56 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+     <Script
+          id="important-script"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+         try {
+          (function(d,t) {
+            var BASE_URL="https://app.chatwoot.com";
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=BASE_URL+"/packs/js/sdk.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g,s);
+            g.onload=function(){
+              window.chatwootSDK.run({
+                websiteToken: 'BhYSCNZgjFEB5xyhbSeVM7FR',
+                baseUrl: BASE_URL
+              })
+            }
+          })(document,"script");
+      } catch (_) {}
+        
+        `,
+          }}
+        ></Script>
+
+      
       <body className={roboto.className}>
+      {/* <script dangerouslySetInnerHTML={{
+          __html: `
+            try {
+              (function(d,t) {
+                var BASE_URL="https://app.chatwoot.com";
+                var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                g.src=BASE_URL+"/packs/js/sdk.js";
+                g.defer = true;
+                g.async = true;
+                s.parentNode.insertBefore(g,s);
+                g.onload=function(){
+                  window.chatwootSDK.run({
+                    websiteToken: 'BhYSCNZgjFEB5xyhbSeVM7FR',
+                    baseUrl: BASE_URL
+                  })
+                }
+              })(document,"script");
+            } catch (_) {}
+          `,
+        }}>
+        </script>
+     */}
         <Header />
         {children}
         <Footer />
