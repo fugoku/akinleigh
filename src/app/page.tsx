@@ -15,9 +15,9 @@ export default function Home() {
     <>
       <Hero />
       {/* <Beroll/> */}
-      <Advantage />
-      <Consulting />
-      <Manage />
+      {/* <Advantage /> */}
+      {/* <Consulting /> */}
+      {/* <Manage /> */}
       {/* <Old /> */}
       {/* <WorldMap /> */}
     </>
