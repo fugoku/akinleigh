@@ -4,15 +4,15 @@ import Image from "next/image";
 // import { Dialog } from "@headlessui/react";
 
 const links = [
-  { label: "Home", href: "/" },
-  { label: "Docs", href: "/docs" },
-  { label: "Consultancy", href: "/consultancy" },
-  { label: "Hosting", href: "/hosting" },
-  { label: "Services", href: "/services" },
-  { label: "Pricing", href: "/pricing" },
+  // { label: "Home", href: "/" },
+  // { label: "Docs", href: "/docs" },
+  { label: "Cloud", href: "/cloud" },
+  { label: "Mentor", href: "/mentor" },
+  // { label: "Services", href: "/services" },
+  // { label: "Pricing", href: "/pricing" },
 ];
 
-const logo = "/logo111.svg";
+const logo = "/v2/fgu.svg";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
