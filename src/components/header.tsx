@@ -1,18 +1,22 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-// import { Dialog } from "@headlessui/react";
+import { ModeToggle } from "@/components/atoms/theme-toggle";
+import { DockDemo } from "./atoms/dock";
+import { MiddleNav } from "./atoms/navdock";
+import ShinyButton from "@/components/magicui/shiny-button";
+import Link from "next/link";
 
 const links = [
-  // { label: "Home", href: "/" },
-  // { label: "Docs", href: "/docs" },
   { label: "Cloud", href: "/cloud" },
   { label: "Mentor", href: "/mentor" },
-  // { label: "Services", href: "/services" },
-  // { label: "Pricing", href: "/pricing" },
 ];
 
 const logo = "/v2/fgu.svg";
+
+export function ShinyButtonDemo() {
+  return <ShinyButton text="Shiny Button" className="" />;
+}
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,16 +27,16 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-fill absolute inset-x-0 top-0 z-50 ">
+      <header className="bg-fill absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Fugoku</span>
-              <Image src={logo} height={144} width={144} alt="fugoku logo" />
-            </a>
+              <Image src={logo} height={144} width={144} alt="Fugoku logo" />
+            </Link>
           </div>
           <div className={`flex lg:hidden ${mobileMenuOpen ? "hidden" : ""}`}>
             <button
@@ -58,46 +62,27 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="hidden lg:flex lg:gap-x-12">
-            {links.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                className="text-sm font-semibold leading-6 text-fade"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-          <div className="p-0 hidden gap-x-5 lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="/signUp"
-              className="p-2 text-sm font-semibold leading-6 text-fade"
-            >
-              Sign up
-            </a>
-            <a
-              href="/signIn"
-              className="bg-primary text-white p-2 rounded-sm text-sm font-semibold leading-6 text-fade"
-            >
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+          <MiddleNav />
+
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-x-5 pt-4">
+            <Link href="/">
+              <ShinyButton text="Login" className="" />
+            </Link>
           </div>
         </nav>
+
         <div
           className={`lg:hidden ${mobileMenuOpen ? "" : "hidden"}`}
           role="dialog"
           aria-modal="true"
         >
-          {/* <!-- Background backdrop, show/hide based on slide-over state. --> */}
           <div className="fixed inset-0 z-50" />
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="/" className="-m-1.5 p-1.5">
+              <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Fugoku</span>
                 <img className="h-8 w-auto" src={logo} alt="Fugoku logo" />
-              </a>
-
+              </Link>
               <button
                 onClick={toggleMenu}
                 type="button"
@@ -124,22 +109,22 @@ export default function Header() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {links.map((link, index) => (
-                    <a
+                    <Link
                       key={index}
                       href={link.href}
                       className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-fade hover:bg-gray-50"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
+                  <Link
                     href="#"
                     className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-fade hover:bg-gray-50"
                   >
                     Log in
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

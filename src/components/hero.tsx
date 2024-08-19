@@ -1,62 +1,26 @@
-// import WorldMap from "@/components/world-section";
-// import Dust from "@/components/dust"
-// import Bubble from "@/components/bubble"
-// import { Suspense } from "react";
+import DotPattern from "@/components/magicui/dot-pattern";
+import TextReveal from "@/components/magicui/text-reveal";
+import { DockDemo } from "./atoms/dock";
+import { DotPatternDemo } from "./atoms/dot-pattern";
+import Bubble from "./example/bubble";
+import { Suspense } from "react";
+import WorldMap from "./example/world-section";
+
+export async function TextRevealDemo() {
+  const text = "Managed Cloud Services Expert Marketplace";
+  return <TextReveal text={text} />;
+}
 
 export default function Hero() {
   return (
     <div className="bg-fill rounded-b-xl">
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        ></div>
-
-        <div className="mx-auto max-w-4xl py-40 sm:py-48 lg:py-40">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              <span className="text-primary">Cloud Computing</span> Services &
-              Cloud <span className="text-primary">Consultancy</span>
-            </h1>
-            <p className="mt-6 text-md leading-8 text-white font-Montserrat">
-              We offer a comprehensive suite of cloud services, including
-              infrastructure as a Service (IaaS), Platform as a Service (PaaS),
-              and Software as a Service (SaaS) to meet your specific needs. Our
-              expert cloud consultants will guide you through every step of your
-              cloud journey, from strategy and migration to ongoing optimization
-              and support.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="/consultancy"
-                className="rounded-sm bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-              >
-                Get started
-              </a>
-              <a
-                href="/consultancy"
-                className="text-sm font-semibold leading-6 text-white"
-              >
-                Schedule Appointment <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        ></div>
+      <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+        <span className="pt-12 pb-6 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+          Managed Cloud Service
+        </span>
       </div>
-
-      <section className="pb-14 ">
-        <div className="mx-auto max-w-5xl bg-fade ">
-          {/* <WorldMap/> */}
-          {/* <Suspense fallback="null">
-                <Bubble></Bubble>
-            </Suspense> */}
-          {/* <Dust/> */}
-        </div>
-      </section>
+      <TextRevealDemo />
+      <DotPatternDemo />
     </div>
   );
 }
