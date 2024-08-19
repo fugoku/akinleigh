@@ -15,7 +15,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 const logo = "/logo111.svg";
-export default function Header() {
+export default function MiddleHeader() {
   return (
     <header className="sticky w-full z-50 mt-2 flex items-center justify-center">
       <div className="fixed bottom-10 md:top-10 z-[9999]">
