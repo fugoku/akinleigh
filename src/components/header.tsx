@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { ModeToggle } from "@/components/atoms/theme-toggle";
+// import { ModeToggle } from "@/components/atoms/theme-toggle";
 import { DockDemo } from "./atoms/dock";
 import { MiddleNav } from "./atoms/navdock";
 import ShinyButton from "@/components/magicui/shiny-button";
