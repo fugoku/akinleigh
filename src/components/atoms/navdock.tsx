@@ -100,7 +100,7 @@ export function MiddleNav() {
           <DockIcon>
             <Tooltip>
               <TooltipTrigger asChild>
-                <ModeToggle className="rounded-full" />
+                <ModeToggle/>
               </TooltipTrigger>
               <TooltipContent>
                 <p>Theme</p>
