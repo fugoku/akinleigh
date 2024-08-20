@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Navbar from "../components/Navbar";
-import Footer from "./Footer";
+import Footer from "../components/atoms/Footer";
 import "./globals.css";
 import Header from "@/components/header";
 import Script from "next/script";

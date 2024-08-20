@@ -1,7 +1,10 @@
 import Image from "next/image";
+import DotPattern from "@/components/magicui/dot-pattern";
+import { cn } from "@/lib/utils";
+
 export default function Footer() {
   return (
-    <footer className="bg-[url('/footer.svg')] text-white-500 bg-[#d2e1f7] dark:bg-gray-500">
+    <footer className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
       {/* <Image
         src="/footer.svg"
         alt="footerfkdksdklsdlk"
@@ -20,7 +23,7 @@ export default function Footer() {
           </div>
           <div>
             <h2 className="mb-6 text-sm font-semibold text-white-500 uppercase dark:text-white">
-              Product
+              Product 
             </h2>
             <ul className="text-gray-500 dark:text-white font-medium">
               <li className="mb-4">
@@ -74,23 +77,29 @@ export default function Footer() {
             <ul className="text-gray-500 dark:text-white-400 font-medium dark:text-white">
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  +2348169391259
+                  +234
                 </a>
               </li>
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  fugoku@gmail.com
+                  support@fugoku.com
                 </a>
               </li>
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  No 6, Lekki, Lagos
+                  VI
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
+
+      <DotPattern
+          className={cn(
+            "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
+          )}
+        />
     </footer>
   );
 }
